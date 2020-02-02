@@ -18,7 +18,7 @@ public class StringUtilTest {
 	 */
 	@Test
 	public void toListTest(){
-		List<String> charList = toList("ABCDEF,123");
+		final List<String> charList = toList("ABCDEF,123");
 		
 		assertEquals("A", charList.get(0));
 		assertEquals("B", charList.get(1));
@@ -39,7 +39,7 @@ public class StringUtilTest {
 	 */
 	@Test
 	public void toListEpmtyTest(){
-		List<String> charList = toList("");
+		final List<String> charList = toList("");
 		assertTrue(charList.isEmpty());
 	}
 }

@@ -17,16 +17,16 @@ public class StringUtil {
 	 * Converts a text into a list of characters.
 	 * 
 	 * @param text The text to be converted.
-	 * @return The list of characters of the givent text.
+	 * @return The list of characters of the given text.
 	 */
-	public static List<String> toList(String text){
-		List<String> stringList = new ArrayList<String>();
+	public static List<String> toList(final String text){
+		final List<String> stringList = new ArrayList<>();
 		
 		for(int i = 0; i < text.length(); i++) {
-			stringList.add(text.substring(i, i+1));
+			stringList.add(text.substring(i, i + 1));
 		}
 		
 		return stringList;
 	}
-	
+
 }
